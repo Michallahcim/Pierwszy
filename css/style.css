@@ -1,0 +1,71 @@
+
+#allpanel{
+    background-color: black;
+    width:100%; height:80%;
+    
+}
+#panelhead{
+    background-color: #352728;
+    width:90%; height:10%;
+    margin: auto;
+    margin-bottom: 1%;
+    
+}
+#panelcontent{
+    background-color: #352728;
+    width: 90%; height:80%;
+    margin: auto;
+}
+#options{
+    background-color: #7c665f;
+    width: 30%;height: 90%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+    
+}
+#description{
+    background-color: #7c665f;
+    width: 30%;height: 90%;
+    float: left;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#avatarsection{
+    background-color: #7c665f;
+    width: 30%;height: 90%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 2%;
+    
+}
+#choose{
+    margin: auto;
+    background-color: #2e2125;
+    width:90%;height:80%;
+    margin-top: 1%;
+
+}
+.choo{
+    background-color: #4e3c3b;
+    width:90%;height:10%;
+    margin: 1% 5% 1% 5%;
+    float: left;
+
+    
+    
+}
+#wcontent{
+    margin: auto;
+    background-color: black;
+    width:90%;height:80%;
+    margin-top: 1%;
+}
+div{
+    border-radius: 5%;
+}
+#rad{
+    margin: auto;
+    width: fit-content;
+}
