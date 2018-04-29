@@ -2,22 +2,21 @@
 #allpanel{
     background-color: black;
     width:100%; height:80%;
-    
 }
 #panelhead{
-    background-color: #352728;
+
     width:90%; height:10%;
     margin: auto;
     margin-bottom: 1%;
     
 }
 #panelcontent{
-    background-color: #352728;
+    
     width: 90%; height:80%;
     margin: auto;
 }
 #options{
-    background-color: #7c665f;
+    
     width: 30%;height: 90%;
     float: left;
     margin-left: 2%;
@@ -25,7 +24,7 @@
     
 }
 #description{
-    background-color: #7c665f;
+    
     width: 30%;height: 90%;
     float: left;
     
@@ -33,7 +32,7 @@
     margin-right: 2%;
 }
 #avatarsection{
-    background-color: #7c665f;
+    
     width: 30%;height: 90%;
     float: left;
     margin-left: 1%;
@@ -69,3 +68,29 @@ div{
     margin: auto;
     width: fit-content;
 }
+.base1{
+    background-color: #352728;
+}
+.blue1{
+    background-color: dodgerblue
+}
+.base2{
+    background-color: darkgrey;
+}
+.blue2{
+    background-color: navy;
+}
+.green1{
+    background-color: chartreuse;
+}
+.green2{
+    background-color: darkgreen;
+}
+.orange1{
+    background-color: orange;
+}
+.orange2{
+    background-color: orangered;
+}
+.kostka{
+    width: 50px ; height: 50px ;
