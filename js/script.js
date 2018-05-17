@@ -15,7 +15,7 @@ document.getElementById('avatarsection').className = "green2";
 });
 var rad1 =document.getElementById('orangeskin');
 rad1.addEventListener('click',function(){
-document.getElementById('panelhead').className = "orange1" ; 
+ 
 document.getElementById('panelcontent').className = "orange1";
 document.getElementById('options').className = "orange2";
 document.getElementById('description').className = "orange2";
@@ -55,3 +55,47 @@ document.getElementById('wcontent').innerHTML = spr;
 
 
 
+//--------------------Filip------------------------
+
+
+var clicker = document.getElementById('choo2');
+
+clicker.addEventListener('click', function(){
+    document.getElementById('clicktable').className = "shown" ;
+
+})
+
+var hits = 0;
+var atak = document.getElementById('atak');
+
+atak.addEventListener('click', function(){
+    hits++;
+    document.getElementById('hits').value = hits ;
+
+    if (hits>=100){
+        document.getElementById('atak1').className = "shown"
+        document.getElementById('cost1').className = "shown"
+        document.getElementById('wojnmbr').className = "shown"
+    }
+
+})
+
+
+atak.addEventListener('dblclick', function(){
+    hits = hits +5;
+    document.getElementById('hits').value = hits ;
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------Filip---------------------
