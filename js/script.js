@@ -1,25 +1,16 @@
 var rad1 =document.getElementById('blueskin');
 rad1.addEventListener('click',function(){
-skin("blue1", "blue2");
+skin("blue1", "blue2", "blue3","blue4");
 
 });
 var rad1 =document.getElementById('greenskin');
 rad1.addEventListener('click',function(){
-document.getElementById('panelhead').className = "green1" ; 
-document.getElementById('panelcontent').className = "green1";
-document.getElementById('options').className = "green2";
-document.getElementById('description').className = "green2";
-document.getElementById('avatarsection').className = "green2";
-
+skin("green1", "green2", "green3","green4")
 
 });
 var rad1 =document.getElementById('orangeskin');
 rad1.addEventListener('click',function(){
-document.getElementById('panelhead').className = "orange1" ; 
-document.getElementById('panelcontent').className = "orange1";
-document.getElementById('options').className = "orange2";
-document.getElementById('description').className = "orange2";
-document.getElementById('avatarsection').className = "orange2";
+skin("orange1", "orange2", "orange3","orange4")
 
 }); 
 
@@ -51,6 +42,16 @@ document.getElementById('wcontent').innerHTML = spr;
         document.getElementById('options').className = kolor2;
         document.getElementById('description').className = kolor2;
         document.getElementById('avatarsection').className = kolor2;
+        document.getElementById('choose').className = kolor3;
+        document.getElementById('choo1').className = kolor4;
+        document.getElementById('choo2').className = kolor4;
+        document.getElementById('choo3').className = kolor4;
+        document.getElementById('choo4').className = kolor4;
+        document.getElementById('choo5').className = kolor4;
+        document.getElementById('choo6').className = kolor4;
+        document.getElementById('choo7').className = kolor4;
+        
+
     }
 
 
