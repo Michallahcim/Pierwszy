@@ -1,85 +1,47 @@
-<html lang="pl">
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">  
-</head>
+<!DOCTYPE HTML>
 
-<body>
-    <div id="allpanel">
-     <div class="base1" id="panelhead">
-     </div>
-     <div class="base1" id="panelcontent">
-        <div class="base2" id="options">
-            <div id="choo2" class="choo">Clicker</div>
-          <div class="base3" id="choose">
-            <div class="choo base4"id="choo1">LOSOWANIE</div>
-            <div class="choo base4"id="choo3"></div>
-            <div class="choo base4"id="choo4"></div>
-            <div class="choo base4"id="choo5"></div>
-            <div class="choo base4"id="choo6"></div>
-            <div class="choo base4"id="choo7"></div>
-          </div>
-        </div>
-        <div class="base2" id="description">
-          <div id="wcontent">
-              <table id="clicktable" class="hidden">
-                  <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                  </tr>
-                  <tr>
-                    <td><button id="atak">Atak</button></td>
-                    <td>Obrażenia</td>
-                    <td><input id="hits" type="text" ></td>
-                  </tr>
-                  <tr>
-                    <td><button class="hidden" id="atak1">Kup wojownika</button></td>
-                    <td><input class="hidden" id="cost1" type="text" ></td>
-                    <td><input class="hidden" id="wojnmbr" type="text" ></td>
-                  </tr>
-                  <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                  </tr>
-                  <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                  </tr>
-                  <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                  </tr>
-                  <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                  </tr>
-                </table>
-          </div>
-        </div>
-        <div class="base2" id="avatarsection">
-          <div id="rad">
-            <input name="w" id="blueskin" type="radio">
-            <input name="w" id="greenskin" type="radio">
-            <input name="w" id="orangeskin" type="radio">
-          </div>
-        </div>
-     </div>
+<html>
+	<head>
+		<title>RPG</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-    </div>
+				<!-- Header -->
+					<header id="header">
+						<h1>RPG ADVENTURE</h1>
+						<p>Start a new adventure &nbsp;&bull;&nbsp; Level up &nbsp;&bull;&nbsp; Beat all enemies</p>
+						<nav>
+							<ul>
+								<li><a href="#" class="">New Hero</a></li>
+								<li><a href="#" class="">Load Hero</a></li>
+								<li><a href="#" class="">Adventure</a></li>
+								<li><a href="#" class="">Campagin</a></li>
+								<li><a href="#" class="">Options</a></li>
+							</ul>
+						</nav>
+					</header>
 
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; RPG ADVENTURE. Design: <a href="https://github.com/KrzysztofOlechno">K.Olechno</a>.</span>
+					</footer>
 
-
-
-
-
-
- <script src="js/script.js"></script>
-</body>
+			</div>
+		</div>
+		
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
-
