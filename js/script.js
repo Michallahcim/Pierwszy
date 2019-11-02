@@ -1,42 +1,108 @@
-var rad1 =document.getElementById('blueskin');
-rad1.addEventListener('click',function(){
-document.getElementById('panelhead').className = "blue1";
-document.getElementById('panelcontent').className = "blue1";
-document.getElementById('options').className = "blue2";
-document.getElementById('description').className = "blue2";
-document.getElementById('avatarsection').className = "blue2";
+startButton = document.getElementById("startButton");
 
+button1k3 = document.getElementById("button1k3");
+button1k4 = document.getElementById("button1k4");
+button1k6 = document.getElementById("button1k6");
+button1k8 = document.getElementById("button1k8");
+button1k12 = document.getElementById("button1k12");
+button1k20 = document.getElementById("button1k20");
+button1k100 = document.getElementById("button1k100");
+
+startButton.addEventListener('click',function() {
+    playSound("sounds/shake.mp3");
+    startButton.style.display = 'none';
+    startButton.style.height = '1%';
+    button1k3.style.display = 'block';
+    button1k4.style.display = 'block';
+    button1k6.style.display = 'block';
+    button1k8.style.display = 'block';
+    button1k12.style.display = 'block';
+    button1k100.style.display = 'block';
 });
-var rad1 =document.getElementById('greenskin');
-rad1.addEventListener('click',function(){
-document.getElementById('panelhead').className = "green1" ; 
-document.getElementById('panelcontent').className = "green1";
-document.getElementById('options').className = "green2";
-document.getElementById('description').className = "green2";
-document.getElementById('avatarsection').className = "green2";
+//najechanie
 
-
+button1k3.addEventListener('mouseenter', function(){
+    playSound("sounds/k3.mp3");
 });
-var rad1 =document.getElementById('orangeskin');
-rad1.addEventListener('click',function(){
-document.getElementById('panelhead').className = "orange1" ; 
-document.getElementById('panelcontent').className = "orange1";
-document.getElementById('options').className = "orange2";
-document.getElementById('description').className = "orange2";
-document.getElementById('avatarsection').className = "orange2";
 
-}); 
+button1k4.addEventListener('mouseenter', function(){
+    playSound("sounds/k4.mp3");
+});
 
+button1k6.addEventListener('mouseenter', function(){
+    playSound("sounds/k6.mp3");
+});
 
+button1k8.addEventListener('mouseenter', function(){
+    playSound("sounds/k8.mp3");
+});
 
-var dice = document.getElementById('choo1');
-dice.addEventListener('click', function(){
-document.getElementById('wcontent').innerHTML = '';
-var ile = 0;
-for(var i=1;i<4;i++){
-kosc = parseInt((Math.random()*6)+1);
-document.getElementById('wcontent').innerHTML += '<img src="images/0' + kosc + 'b.svg" class="kostka">';
-ile += kosc;
-};
-document.getElementById('wcontent').innerHTML += ile;
-})
+button1k12.addEventListener('mouseenter', function(){
+    playSound("sounds/k12.mp3");
+});
+
+button1k20.addEventListener('mouseenter', function(){
+    playSound("sounds/k20.mp3");
+});
+
+button1k100.addEventListener('mouseenter', function(){
+    playSound("sounds/k100.mp3");
+});
+
+// shake
+
+button1k3.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(3);
+});
+
+button1k4.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(4);
+});
+
+button1k6.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(6);
+});
+
+button1k8.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(8);
+});
+
+button1k12.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(12);
+});
+
+button1k20.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(20);
+});
+
+button1k100.addEventListener('click', function(){
+    playSound("sounds/shake.mp3");
+    diceThrow(100);
+});
+
+function diceThrow(cubeType)
+{
+    var cube = parseInt((Math.random()*cubeType)+1);
+    var cubeTypeString = cubeType.toString();
+    console.log('W wyniku rzutu kością 1k' + cubeTypeString + ' wypadła wartość:',cube);
+    speakNumber(cubeType, cube);
+    
+}
+
+function speakNumber(cubeType, number)
+{
+    var soundUrlString = 'sounds/' + number.toString() +'.mp3';
+    playSound(soundUrlString);
+    console.log(soundUrlString, cubeType);
+}
+
+function playSound(url) {
+    var sound = new Audio(url);
+    sound.play();
+}
